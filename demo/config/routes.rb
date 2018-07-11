@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
   resources :users
+  resources :tests
   #get "/", to: "users#index"
   root "users#index"
   get "/test_redirect_users", to: redirect('/users')
