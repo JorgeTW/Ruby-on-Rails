@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
   resources :users
-  resources :tests
+  resources :tests#建立8個路由
   #get "/", to: "users#index"
   root "users#index"
   get "/test_redirect_users", to: redirect('/users')
